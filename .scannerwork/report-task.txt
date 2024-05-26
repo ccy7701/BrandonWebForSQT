@@ -1,0 +1,7 @@
+organization=ccy7701-1
+projectKey=ccy7701_BrandonWebForSQT
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.54573
+dashboardUrl=https://sonarcloud.io/dashboard?id=ccy7701_BrandonWebForSQT
+ceTaskId=AY-ztzyJZufN4-Ee8HW0
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY-ztzyJZufN4-Ee8HW0

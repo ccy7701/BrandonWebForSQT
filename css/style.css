@@ -1,0 +1,548 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+ /*===========================================
+  CSS for footer in every page
+===========================================*/
+.footer {
+  background-color: #0f0f0f;
+  text-align: center;
+  color: rgb(245, 243, 243);
+  font-size: 12px;
+  padding: 5px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+/*===========================================
+  CSS for menu in every page
+===========================================*/
+.topnav {
+	overflow: hidden;
+	background-color: #000000;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #F0F8FF;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #29a33d;
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+/*===========================================
+  CSS used for responsive div in index.html
+  using flex.
+===========================================*/
+.row {
+	display: flex;
+	flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-left {
+	text-align: center;
+	flex: 20%;
+	padding: 15px;
+}
+.col-right {
+	flex: 70%;
+	padding: 15px;
+}
+
+/* Login */
+
+.container {
+  width: 300px;
+  padding: 16px;
+  background-color: white;
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgcontainer {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin to separate image container from other elements */
+}
+
+.imgcontainer img {
+  width: 100%;
+  height: auto;
+}
+
+/* labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+/* input fields */
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* login button */
+button {
+  background-color: #29a33d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #585858;
+}
+
+/* Remember me checkbox */
+label input[type=checkbox] {
+  margin-top: 10px;
+}
+
+/* link in the container */
+.psw a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #e60a0a;
+}
+
+.psw a:hover {
+  color: #3b3939;
+}
+
+.col-news {
+  flex: 1; /* Let the news column fill the remaining space */
+}
+
+#newsDiv {
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-info img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%; /*rounded profile picture */
+}
+
+.profile-info label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.profile-info input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-info input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #29a33d;
+    color: #fff;
+}
+
+.profile-info input[type="submit"]:hover {
+    background-color: #29a33d;
+}
+
+/* left side column colour on profile.php*/
+.coloring {
+  background-color: #29a33d; 
+}
+
+.column {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+				padding-bottom: 50px;
+    }
+
+    .column-left {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .column-right {
+        flex: 2;
+        padding-left: 20px;
+        border-left: 1px solid #ddd;
+    }
+
+    .image {
+        max-width: 100%;
+        height: 70%;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    #profile_table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    #profile_table td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 10px 15px;
+        margin: 10px 5px;
+        border: none;
+        border-radius: 4px;
+        background-color: #29a33d;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #29a33d;
+    }
+
+		table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    p {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    a {
+        color: #29a33d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #29a33d;
+    }
+
+    /*===========================================
+		  CSS for my_kpi.php
+		===========================================*/
+
+    #kpiDiv table{
+			border-collapse: collapse;
+			width: 50%;
+			padding-left: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#kpiDiv 
+      input[type="submit"],
+			input[type="reset"], 
+      input[type="button"]{
+			padding: 15px 32px;
+			cursor: pointer;
+		}
+
+		#kpiDiv  select{
+			padding: 5px;
+		}
+
+		#kpiDiv  input[type="text"]{
+			padding: 5px;
+      width: auto;
+		}
+
+		#kpiDiv  textarea{
+			width:95%;
+			padding: 5px;
+		}
+
+		#kpiDiv  td, #kpiDiv  th {
+			border: 1px solid #616161;
+			padding: 8px;
+		}
+
+    /* style table using id=kpitable 
+		=====================================*/
+
+    #kpitable {
+			border-collapse: collapse;
+			width: 100%;
+			padding-left: 30px;
+      overflow-x: auto;
+		}
+
+
+		#kpitable td, #kpitable th {
+			border: 1px solid #616161;
+			padding: 8px;
+		}
+
+		#kpitable tr:nth-child(even){background-color: #ddd;}
+		#kpitable tr:hover {background-color: #E0FFFF;}
+
+		#kpitable th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: center;
+			background-color: #29a33d;
+			color: black;
+		}
+
+		#kpitable td {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: cenetr;
+			color: black;
+		}
+
+    @media (max-width: 600px) {
+      /* Apply these styles for screens with a maximum width of 600px */
+      #kpitable th,
+      #kpitable td {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 5px;
+      }
+    }
+
+    /*===========================================
+		  CSS for my_activities.php 
+		===========================================*/
+
+    #activityDiv table{
+			border-collapse: collapse;
+			width: 50%;
+			padding-left: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#activityDiv 
+      input[type="submit"],
+			input[type="reset"], 
+      input[type="button"]{
+			padding: 15px 32px;
+			cursor: pointer;
+		}
+
+		#activityDiv  select{
+			padding: 5px;
+		}
+
+		#activityDiv  input[type="text"]{
+			padding: 5px;
+		}
+
+		#activityDiv  textarea{
+			width:95%;
+			padding: 5px;
+		}
+
+		#activityDiv  td, #activityDiv  th {
+			border: 1px solid #616161;
+			padding: 8px;
+		}
+
+    /* style table using id=activitytable 
+		=====================================*/
+
+    #activitytable {
+			border-collapse: collapse;
+			width: 90%;
+			padding-left: 30px;
+      margin-left: auto;
+      margin-right: auto;
+		}
+
+		#activitytable td, #activitytable th {
+			border: 1px solid #616161;
+			padding: 8px;
+		}
+
+		#activitytable tr:nth-child(even){background-color: #ddd;}
+		#activitytable tr:hover {background-color: #E0FFFF;}
+
+		#activitytable th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: center;
+			background-color: #29a33d;
+			color: black;
+		}
+
+		#activitytable td {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: center;
+			color: black;
+		}
+
+		/*===========================================
+		  CSS for my_challenge.php
+		===========================================*/
+		#challengeDiv table{
+			border-collapse: collapse;
+			width: 50%;
+			padding-left: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#challengeDiv 
+      input[type="submit"],
+			input[type="reset"], 
+      input[type="button"]{
+			padding: 15px 32px;
+			cursor: pointer;
+		}
+
+		#challengeDiv select{
+			padding: 5px;
+		}
+
+		#challengeDiv input[type="text"]{
+			padding: 5px;
+		}
+
+		#challengeDiv textarea{
+			width:95%;
+			padding: 5px;
+		}
+
+		#challengeDiv td, #challengeDiv th {
+			border: 1px solid #616161;
+			padding: 8px;
+		}
+
+		/* style table using id=challengetable 
+		=====================================*/
+
+		#challengetable {
+			border-collapse: collapse;
+			width: 100%;
+			padding-left: 30px;
+		}
+
+		#challengetable td, #challengetable th {
+			border: 1px solid #616161;
+			padding: 8px;
+		}
+
+		#challengetable tr:nth-child(even){background-color: #ddd;}
+		#challengetable tr:hover {background-color: #E0FFFF;}
+
+		#challengetable th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #29a33d;
+			color: black;
+		}
+
+		#challengetable td {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			color: black;
+		}
+
+.emptyspace{
+	margin-bottom: 20px;
+	padding-top: 50px;
+}
